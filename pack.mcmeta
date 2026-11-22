@@ -1,0 +1,17 @@
+{
+    "pack": {
+        "description": [
+            {
+                "color": "#ff0000",
+                "text": "Hyper Fuzzler\n"
+            },
+            {
+                "color": "#CCCCCC",
+                "text": "- I'm so sorry..."
+            }
+        ],
+        "pack_format": 97,
+        "min_format": 97,
+        "max_format": 97
+    }
+}
