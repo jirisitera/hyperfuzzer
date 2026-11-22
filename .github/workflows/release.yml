@@ -1,5 +1,5 @@
-name: HyperFuzzler
-run-name: HyperFuzzler v${{ inputs.version }}
+name: HyperFuzzer
+run-name: HyperFuzzer v${{ inputs.version }}
 on:
   workflow_dispatch:
     inputs:
@@ -18,11 +18,11 @@ jobs:
           java-version: 25
           distribution: temurin
       - name: package resource pack
-        run: zip -r hyperfuzzler.zip assets pack.mcmeta
+        run: zip -r hyperfuzzer.zip assets pack.mcmeta
       - uses: Kir-Antipov/mc-publish@v3
         with:
-          name: HyperFuzzler v${{ inputs.version }}
+          name: HyperFuzzer v${{ inputs.version }}
           version: ${{ inputs.version }}
           files: |
-            hyperfuzzler.zip
+            hyperfuzzer.zip
           github-token: ${{ secrets.GITHUB_TOKEN }}
