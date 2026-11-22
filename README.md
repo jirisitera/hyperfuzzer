@@ -1,4 +1,4 @@
-# Hyper Fuzzler
+# Hyper Fuzzer
 
 A crash test for Minecraft.
 
